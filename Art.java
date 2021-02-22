@@ -19,23 +19,12 @@ public class Art
 		sort(x);
 		sort(y);
 		
-		xMin = x[0] - 1;
-		xMax = x[x.length - 1] + 1;
-		yMin = y[0] - 1;
-		yMax = y[y.length - 1] + 1;
 		
-		System.out.println(xMin + "," + yMin);
-		System.out.println(xMax + "," + yMax);
+		System.out.println(x[0] - 1 + "," + y[0] - 1);
+		System.out.println(x[x.length - 1] + 1 + "," + y[y.length - 1] + 1);
 	}//End Main
 	
-	public static void display(int array[])
-	{
-		for(int x: array)
-		{
-			System.out.print(x + " ");
-		}
-		System.out.println();
-	}
+	
 	
 	public static void sort(int arr[]) 
 	{
@@ -47,7 +36,6 @@ public class Art
 			{
 				if(arr[j] > arr[j + 1])
 				{
-					//To flip ascending/descending orders, change the greater than/less than sign
 
 					temp = arr[j];
 					arr[j] = arr[j + 1];
